@@ -3,6 +3,18 @@
     {% include '/includes/head.html.twig' %}
     <body>
         <div class="container">
+            <h1>Leetspeak Translator</h1>
+            <form action="/translate_submit">
+                <div class="form-group">
+                    <label for="phrase">Enter a phrase to translate</label>
+                    <input type="text" id="phrase" name="phrase" class='form-control'><br>
+                    <button class="btn btn-success" type="submit">Translate the phrase!</button>
+                </div>
+            </form>
+
+            <div class="well">
+                <p>{{ result }}</p>
+            </div>
             
         </div>
     </body>

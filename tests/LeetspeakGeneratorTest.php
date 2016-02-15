@@ -52,12 +52,18 @@
             //Arange
             $test_LeetspeakGenerator = new LeetspeakGenerator;
             $input = "access";
+            $input2 = "success";
+            $input3 = "I love success not 'strings'";
 
             //Act
             $result = $test_LeetspeakGenerator->translate($input);
+            $result2 = $test_LeetspeakGenerator->translate($input2);
+            $result3 = $test_LeetspeakGenerator->translate($input3);
 
             //Assert
             $this->assertEquals("acc3zz", $result);
+            $this->assertEquals("succ3zz", $result2);
+            $this->assertEquals("1 l0v3 succ3zz n0t 'stringz'", $result3);
         }
     }
 

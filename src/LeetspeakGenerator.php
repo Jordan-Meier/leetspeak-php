@@ -15,6 +15,9 @@
                 if ($letter == 'I') {
                     $letter = '1';
                 }
+                if ($letter == 's') {
+                    $letter = 'z';
+                }
                 array_push($result_array, $letter);
             }
             return implode('', $result_array);

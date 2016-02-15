@@ -46,7 +46,18 @@
 
             //Assert
             $this->assertEquals("1rritat3", $result);
+        }
+        function test_translate_replaceS()
+        {
+            //Arange
+            $test_LeetspeakGenerator = new LeetspeakGenerator;
+            $input = "access";
 
+            //Act
+            $result = $test_LeetspeakGenerator->translate($input);
+
+            //Assert
+            $this->assertEquals("acc3zz", $result);
         }
     }
 

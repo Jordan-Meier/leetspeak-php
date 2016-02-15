@@ -19,6 +19,35 @@
             $this->assertEquals("3dg3", $result2);
 
         }
+        function test_translate_replaceO()
+        {
+            //Arange
+            $test_LeetspeakGenerator = new LeetspeakGenerator;
+            $input = "look";
+            $input2 = "Organ";
+
+            //Act
+            $result = $test_LeetspeakGenerator->translate($input);
+            $result2 = $test_LeetspeakGenerator->translate($input2);
+
+            //Assert
+            $this->assertEquals("l00k", $result);
+            $this->assertEquals("0rgan", $result2);
+
+        }
+        function test_translate_replaceI()
+        {
+            //Arange
+            $test_LeetspeakGenerator = new LeetspeakGenerator;
+            $input = "Irritate";
+
+            //Act
+            $result = $test_LeetspeakGenerator->translate($input);
+
+            //Assert
+            $this->assertEquals("1rritat3", $result);
+
+        }
     }
 
 

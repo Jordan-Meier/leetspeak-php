@@ -9,6 +9,12 @@
                 if ($letter == 'e' || $letter == 'E') {
                     $letter = '3';
                 }
+                if ($letter == 'o' || $letter == 'O') {
+                    $letter = '0';
+                }
+                if ($letter == 'I') {
+                    $letter = '1';
+                }
                 array_push($result_array, $letter);
             }
             return implode('', $result_array);
